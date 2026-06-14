@@ -1,0 +1,42 @@
+body {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    font-family: Arial;
+}
+
+h2 {
+    animation: fadeDown 0.8s ease-in-out;
+}
+
+table {
+    background: white;
+    animation: fadeUp 1s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+button, .btn {
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.05);
+}
+
+tr {
+    transition: 0.3s;
+}
+
+tr:hover {
+    background: #f1f1f1;
+    transform: scale(1.01);
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
